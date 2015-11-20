@@ -144,6 +144,9 @@ b {
   h1 {
     margin-top: 50px;
 		font-size: 80px;
+    @media (max-width: $xs) {
+        font-size:50px;
+    }
 		color: $white;
 		font-weight: bold;
 		text-shadow: 0px 2px 0px #333;
@@ -152,7 +155,6 @@ b {
       height: 250px;
     }
   }
-
 	h3, h2 {
   	color: $white;
   	font-weight: 300;
@@ -161,6 +163,9 @@ b {
 
 	h2 {
     font-size: 50px;
+    @media (max-width: $xs) {
+        font-size:34px;
+    }
 		font-weight: bold;
 		margin: 0;
   }
@@ -188,6 +193,11 @@ b {
   		margin-right: -5px;
   		border-top-right-radius: 0px;
   		border-bottom-right-radius: 0px;
+      @media(max-width: $xs){
+        margin-top:5px;
+    		border-top-right-radius: 5px;
+    		border-bottom-right-radius: 5px;
+      }
   }
 
 	#mc_embed_signup .mc-field-group .button-red {
@@ -202,6 +212,11 @@ b {
 		border-bottom-right-radius: 5px;
 		border-top-left-radius: 0px;
 		border-bottom-left-radius: 0px;
+    @media(max-width: $xs){
+      margin-top:5px;
+  		border-top-left-radius: 5px;
+  		border-bottom-left-radius: 5px;
+    }
   }
 
 	#mce-success-response,
